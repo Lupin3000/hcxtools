@@ -14,4 +14,10 @@ RUN apk update \
 
 WORKDIR /hcxpcaptool
 
+RUN addgroup hcx \
+    && adduser -H -D hcx -G hcx \
+    && chown hcx:hcx /hcxpcaptool
+
+USER hcx
+
 ENTRYPOINT ["/usr/local/bin/hcxpcaptool", "-z", "pmkid.16800"]
