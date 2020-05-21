@@ -13,7 +13,7 @@ $ docker pull slorenz/hcxpcaptool
 
 ## Build by your self
 
-If you don't like to use my Docker image from DockerHub [here](https://hub.docker.com/r/slorenz/hcxpcaptool), you can build by your self after clone. Here an example...
+If you don't like to use my Docker image from [DockerHub](https://hub.docker.com/r/slorenz/hcxpcaptool), you can build by your self after clone. Here an example...
 
 ```shell
 # change into directory of Dockerfile
@@ -44,5 +44,7 @@ $ docker run -ti --rm --mount src="$(pwd)/cap",target=/hcxpcaptool,type=bind alp
 $ cat cap/pmkid.16800
 ```
 
-Note: Inside the container the directory "/hcxpcaptool" must contain the cap/pcap/pcapng WiFi dump - in the example I use "bettercap-wifi-handshakes.pcap" which is stored inside local "cap" directory. After successful execution the text file "pmkid.16800" is generated.
+**Note:** Inside the container, the directory "/hcxpcaptool" must contain the captured cap/pcap/pcapng WiFi dump to convert.
+
+In the example above I use "bettercap-wifi-handshakes.pcap" which is stored inside local "cap" directory (_what I mount into the specific directory_). After successful execution the (_text_) file "pmkid.16800" is generated.
 
