@@ -20,7 +20,7 @@ If you don't like to use my Docker image from DockerHub (https://hub.docker.com/
 $ cd /path/of/Dockerfile
 
 # run Docker build
-$ docker build -t alpine/hcxtools .
+$ docker build  --pull -t alpine/hcxtools .
 ```
 
 ## Usage
