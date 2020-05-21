@@ -2,6 +2,15 @@
 
 Simple alpine hcxpcaptool Dockerfile for conversion of cap/pcap/pcapng WiFi dump files to hashcat formats. The original repository of hcxtools can be found on https://github.com/ZerBea/hcxtools.
 
+## Download from DockerHub
+
+You can use the image from DockerHub.
+
+```shell
+# pull from DockerHub
+$ docker pull slorenz/hcxpcaptool
+```
+
 ## Build by your self
 
 If you don't like to use my Docker image from DockerHub (https://hub.docker.com/r/slorenz/hcxpcaptool), you can build by your self after clone. Here an example...
