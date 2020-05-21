@@ -13,7 +13,7 @@ $ docker pull slorenz/hcxpcaptool
 
 ## Build by your self
 
-If you don't like to use my Docker image from DockerHub (https://hub.docker.com/r/slorenz/hcxpcaptool), you can build by your self after clone. Here an example...
+If you don't like to use my Docker image from DockerHub [here](https://hub.docker.com/r/slorenz/hcxpcaptool), you can build by your self after clone. Here an example...
 
 ```shell
 # change into directory of Dockerfile
