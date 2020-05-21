@@ -1,7 +1,7 @@
 FROM alpine
 
 LABEL author="Lupin3000"
-Label version="1.0"
+LABEL version="1.0"
 
 RUN apk update \
     && apk add --no-cache --virtual .build-deps \
