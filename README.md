@@ -20,7 +20,7 @@ If you don't like to use my Docker image from [DockerHub](https://hub.docker.com
 $ cd /path/of/Dockerfile
 
 # run Docker build
-$ docker build  --pull -t alpine/hcxtools .
+$ docker build  --pull -t slorenz/hcxtools .
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ $ cd ~/Projects/MyCapFiles
 $ cp cp ~/bettercap-wifi-handshakes.pcap cap/
 
 # run Docker container
-$ docker run -ti --rm --mount src="$(pwd)/cap",target=/hcxpcaptool,type=bind alpine/hcxtools bettercap-wifi-handshakes.pcap 
+$ docker run -ti --rm --mount src="$(pwd)/cap",target=/hcxpcaptool,type=bind slorenz/hcxtools bettercap-wifi-handshakes.pcap 
 
 # read converted output file
 $ cat cap/pmkid.16800
