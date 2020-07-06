@@ -35,7 +35,7 @@ $ mkdir -p ~/Projects/MyCapFiles/cap
 $ cd ~/Projects/MyCapFiles
 
 # copy pcap files into cap directory
-$ cp cp ~/bettercap-wifi-handshakes.pcap cap/
+$ cp ~/bettercap-wifi-handshakes.pcap cap/
 
 # run Docker container
 $ docker run -ti --rm --mount src="$(pwd)/cap",target=/hcxpcaptool,type=bind slorenz/hcxpcaptool bettercap-wifi-handshakes.pcap 
